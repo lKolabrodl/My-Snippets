@@ -1,7 +1,9 @@
-# Hamburger menu animations
+# Модальное окно
 
-ссылка на быстрый просмотр -  https://lkolabrodl.github.io/My-Snippets/web/Menu.Hamburger%20animations/
+открывется по кпопке, закрывается по esc, клик вне модального окна или крестик
+<br>
+ссылка на быстрый просмотр -  https://lkolabrodl.github.io/My-Snippets/web/modal window on click/
 <br>
 <br>
-![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/Menu.Hamburger%20animations/Screenshot_2.png)
-![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/Menu.Hamburger%20animations/Screenshot_1.png)
+![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/modal%20window%20on%20click/Screenshot_2.png)
+![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/modal%20window%20on%20click/Screenshot_1.png)
