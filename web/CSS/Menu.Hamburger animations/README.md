@@ -4,4 +4,5 @@
 <br>
 <br>
 ![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/Menu.Hamburger%20animations/Screenshot_2.png)
+<br>
 ![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/Menu.Hamburger%20animations/Screenshot_1.png)
