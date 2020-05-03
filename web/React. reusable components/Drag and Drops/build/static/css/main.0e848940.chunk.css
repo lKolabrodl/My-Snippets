@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}body{background-color:#f3f3f3}.center{justify-content:space-between;max-width:800px;height:100vh;overflow:hidden;margin:0 auto}.board,.center{display:flex;width:100%;padding:15px}.board{flex-direction:column;max-width:300px;background-color:#313131}.board .card{padding:15px;background-color:#f3f3f3;cursor:pointer;margin-bottom:15px}
+/*# sourceMappingURL=main.0e848940.chunk.css.map */
