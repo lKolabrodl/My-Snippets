@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Movie-db/static/css/main.89b4bf41.chunk.css",
+    "main.js": "/Movie-db/static/js/main.7ca7f668.chunk.js",
+    "main.js.map": "/Movie-db/static/js/main.7ca7f668.chunk.js.map",
+    "runtime-main.js": "/Movie-db/static/js/runtime-main.bf57aee1.js",
+    "runtime-main.js.map": "/Movie-db/static/js/runtime-main.bf57aee1.js.map",
+    "static/js/2.9d482208.chunk.js": "/Movie-db/static/js/2.9d482208.chunk.js",
+    "static/js/2.9d482208.chunk.js.map": "/Movie-db/static/js/2.9d482208.chunk.js.map",
+    "index.html": "/Movie-db/index.html",
+    "precache-manifest.0a31c205503326fe03399b9f0c66ae92.js": "/Movie-db/precache-manifest.0a31c205503326fe03399b9f0c66ae92.js",
+    "service-worker.js": "/Movie-db/service-worker.js",
+    "static/css/main.89b4bf41.chunk.css.map": "/Movie-db/static/css/main.89b4bf41.chunk.css.map",
+    "static/js/2.9d482208.chunk.js.LICENSE.txt": "/Movie-db/static/js/2.9d482208.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Movie-db/static/media/arrow-down-mint.f0b88b91.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf57aee1.js",
+    "static/js/2.9d482208.chunk.js",
+    "static/css/main.89b4bf41.chunk.css",
+    "static/js/main.7ca7f668.chunk.js"
+  ]
+}
