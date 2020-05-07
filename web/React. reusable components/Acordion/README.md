@@ -1,7 +1,7 @@
-# перетаскивает элементов из 1 окна в другое
+# Простой аккордион 
 <br>
+изменение стейта опен - добавление класса
 <br>
 
-![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/React.%20reusable%20components/Drag%20and%20Drops/Screenshot_1.png)
-<br>
-![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/React.%20reusable%20components/Drag%20and%20Drops/Screenshot_2.png)
+![Alt text](https://raw.githubusercontent.com/lKolabrodl/My-Snippets/master/web/React.%20reusable%20components/Acordion/Screenshot_1.png)
+
