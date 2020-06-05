@@ -33,8 +33,7 @@
           'total'     => $query->max_num_pages,
           'post_type' => 'news',
         ) );
-        ?>
-        
+        ?>     
           
     </div>
         <?php    
