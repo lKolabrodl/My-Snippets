@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>тестовое задание</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="myForm">
+      <form method="post" action="#">
+        <label
+          >ФИО:
+          <input
+            type="text"
+            class="normal"
+            onblur="this.className='normal'"
+            onfocus="this.className='activeField'"
+            required="required"
+            name="name"
+          />
+        </label>
+
+        <label
+          >E-mail:<input
+            type="email"
+            class="normal"
+            onblur="this.className='normal'"
+            onfocus="this.className='activeField'"
+            name="email"
+          />
+        </label>
+
+        <label
+          >Телефон:<input
+            type="tel"
+            class="normal"
+            onblur="this.className='normal'"
+            onfocus="this.className='activeField'"
+            name="phone"
+          />
+        </label>
+
+        <input
+          type="submit"
+          value="Отправить"
+          class="normal"
+          onblur="this.className='normal'"
+          onfocus="this.className='activeField'"
+        />
+        <p id="errorName"></p>
+        <p id="errorPhone"></p>
+        <p id="errorEmail"></p>
+      </form>
+    </div>
+
+    <script src="/common.js"></script>
+  </body>
+</html>

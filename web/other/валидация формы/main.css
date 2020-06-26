@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+}
+
+#myForm {
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  background-color: #d6e5f4;
+  padding: 10px;
+  width: 310px;
+  margin: 0 auto;
+}
+
+#myForm input {
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px;
+  width: 300px;
+}
+
+#myForm input[type='submit'] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.activeField {
+  background-image: none;
+  background-color: #ffffff;
+  border: solid 1px #33677F;
+}
+
+.normal {
+  border: solid 1px #85b1de;
+  background-image: url('gray_bg.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #FFFFFF;
+}
