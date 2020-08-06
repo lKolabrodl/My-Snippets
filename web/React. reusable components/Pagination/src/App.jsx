@@ -5,9 +5,13 @@ import Posts from "./componets/posts";
 import Pagination from "./componets/pagination";
 
 const App = () => {
+  //все посты
   const [posts, setPosts] = useState([]);
+  //загрузка
   const [loading, setLoading] = useState(false);
+  //выбранная страница
   const [currenPage, setCurrenPage] = useState(1);
+  //сколько постов на странице
   const [postPerPage, setPostPerPage] = useState(10);
 
   const indexLastPost = currenPage * postPerPage; // 1 * 10
