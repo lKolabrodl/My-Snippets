@@ -3,7 +3,10 @@ function minimized__img() {
   allPhoto.forEach((photo) => {
     photo.addEventListener("click", () => {
       //берем атрибут большой фото
-      const i_path = photo.getAttribute("data-minimized");
+      let i_path = photo.getAttribute("data-minimized");
+      if (!i_path) {
+        i_path = photo.getAttribute("src");
+      }
       //создаем объекты
       minimizedCreateObject(i_path);
       //добавляем актив
