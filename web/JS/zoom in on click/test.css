@@ -49,24 +49,49 @@
 
 #minimized_close_popup {
   position: absolute;
-
   width: 20px;
   height: 20px;
   right: 5px;
   top: 5px;
   cursor: pointer;
   z-index: 110;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+
+#minimized__arrw__right,
+#minimized__arrw__left {
+  content: "";
+  position: absolute;
+  left: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(135deg);
+  z-index: 120;
+
+}
+
+
+
+#minimized__arrw__right {
+  transform: rotate(-45deg);
+  left: calc(100% - 27px);
 }
 
 #minimized_close_popup:before,
 #minimized_close_popup:after {
   content: '';
   position: absolute;
-  right: 10px;
-  height: 100%;
+  right: 9px;
+  height: 90%;
+  top: 5%;
   width: 2px;
   background-color: black;
   transform: rotate(45deg);
+
 }
 
 #minimized_close_popup:after {

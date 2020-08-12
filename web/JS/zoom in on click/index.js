@@ -1,8 +1,15 @@
 function minimized__img() {
   const allPhoto = document.querySelectorAll("img.minimized__img");
+  const allGallery = [];
+
   allPhoto.forEach((photo) => {
+    if (photo.hasAttribute("data-gallery")) {
+      allGallery.push(photo);
+    }
+
     photo.addEventListener("click", () => {
       //берем атрибут большой фото
+
       let i_path = photo.getAttribute("data-minimized");
       if (!i_path) {
         i_path = photo.getAttribute("src");
@@ -45,7 +52,14 @@ function minimized__img() {
         true
       );
 
-      //
+      if (!photo.hasAttribute("data-gallery")) {
+        if (document.querySelector("#minimized__arrw__left")) {
+          document.querySelector("#minimized__arrw__left").remove;
+          document.getElementById("minimized__arrw__right").remove;
+        }
+      } else {
+        arrowSlider(allGallery);
+      }
     });
   });
 
@@ -77,6 +91,28 @@ function minimized__img() {
       minimized_magnify.appendChild(minimized_close_popup);
     } else {
       document.getElementById("minimized_img").src = img_scr;
+    }
+  }
+
+  function arrowSlider(array) {
+    if (array.length <= 0) {
+      return;
+    }
+    if (
+      !document.getElementById("minimized__arrw__left") &&
+      !document.getElementById("minimized__arrw__right")
+    ) {
+      const minimized__arrw__left = document.createElement("div");
+      minimized__arrw__left.id = "minimized__arrw__left";
+
+      const minimized__arrw__right = document.createElement("div");
+      minimized__arrw__right.id = "minimized__arrw__right";
+
+      let minimized__magnify = document.getElementById("minimized__magnify");
+      minimized__magnify.appendChild(minimized__arrw__left);
+      minimized__magnify.appendChild(minimized__arrw__right);
+
+      console.log("ss");
     }
   }
 }
