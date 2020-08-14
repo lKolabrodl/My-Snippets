@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; }
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: -webkit-linear-gradient(left, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: -o-linear-gradient(left, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1; }
+
+a:hover {
+  -webkit-animation: Kolabrod 8s linear infinite;
+  animation: Kolabrod 8s linear infinite; }
+
+@-webkit-keyframes Kolabrod {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
+
+@keyframes Kolabrod {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
+
+a::before {
+  content: ' ';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: -webkit-linear-gradient(left, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: -o-linear-gradient(left, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+a:hover::before {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  opacity: 1;
+  -webkit-animation: Kolabrod 8s linear infinite;
+  animation: Kolabrod 8s linear infinite; }
