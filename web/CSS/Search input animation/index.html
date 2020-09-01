@@ -21,23 +21,28 @@
 
   <script type="text/javascript">
     function searchClick() {
-      let btn = document.querySelector(".search .icon");
-      let search = document.querySelector(".search ");
-      let input = document.querySelector('.search input')
-      btn.addEventListener("click", () => {
-        search.classList.toggle("active");
-      });
+      try {
+        let btn = document.querySelector(".search .icon");
+        let search = document.querySelector(".search ");
+        let input = document.querySelector('.search input')
+        btn.addEventListener("click", () => {
+          search.classList.toggle("active");
+        });
 
-      window.onclick = function (e) {
-        if (e.target !== btn && e.target !== input) {
-          search.classList.remove("active");
-        }
-      };
-      window.addEventListener("keydown", function (e) {
-        if (e.keyCode == 27) {
-          search.classList.remove("active");
-        }
-      }, true)
+        window.onclick = function (e) {
+          if (e.target !== btn && e.target !== input) {
+            search.classList.remove("active");
+          }
+        };
+        window.addEventListener("keydown", function (e) {
+          if (e.keyCode == 27) {
+            search.classList.remove("active");
+          }
+        }, true)
+      } catch (err) {
+        console.log(`Ошибка в фу-ии "searchClick", ${err}`)
+      }
+
     }
     searchClick();
   </script>
