@@ -15,6 +15,7 @@
 #minimized__overplay._active {
   height: 100vh;
   opacity: 1;
+  padding: 20px;
 }
 
 #minimized__magnify {
@@ -31,7 +32,7 @@
   justify-content: center;
   align-items: center;
   max-width: 70%;
-  padding: 20px;
+  padding: 0;
   background-color: aliceblue;
   border: 1px solid rgba(34, 25, 25, .6);
 }

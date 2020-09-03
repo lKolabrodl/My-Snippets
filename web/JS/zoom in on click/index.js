@@ -111,8 +111,6 @@ function minimized__img() {
       let minimized__magnify = document.getElementById("minimized__magnify");
       minimized__magnify.appendChild(minimized__arrw__left);
       minimized__magnify.appendChild(minimized__arrw__right);
-
-      console.log("ss");
     }
   }
 }
