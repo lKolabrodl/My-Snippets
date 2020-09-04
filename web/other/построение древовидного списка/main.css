@@ -1,0 +1,10 @@
+#container li.main__title {
+  cursor: pointer;
+}
+#container ul li > ul {
+  display: none;
+}
+
+#container ul li > ul.active {
+  display: block;
+}
