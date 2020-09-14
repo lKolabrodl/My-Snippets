@@ -1,5 +1,4 @@
-### Построить дерево по данным из сети
-
+###  Построить дерево по данным из сети
 Дан JSON файл
 https://rcslabs.ru/locations.json
 В нем задан массив локаций, у каждого из которых есть поля
@@ -38,3 +37,5 @@ https://rcslabs.ru/locations.json
   необфусцированного кода, либо полный проект с dev-server
 - По адресу https://rcslabs.ru/locations2.json лежит еще один подобный набор данных с такой
   же структурой
+  ---
+  ## ссылка превью https://lkolabrodl.github.io/My-Snippets/web/other/%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0/
