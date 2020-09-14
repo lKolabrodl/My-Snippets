@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+
+
+  <form action="#0">
+
+    <div class="form-group">
+      <input type="text" id="first_name" name="first_name" required placeholder=" " />
+      <label for="first_name">First Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="last_name" name="last_name" required placeholder=" " />
+      <label for="last_name">Last Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" name="email" required placeholder=" " />
+      <label for="email">Email Address</label>
+      <div class="requirements">
+        Must be a valid email address.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+      <label for="password">Password</label>
+      <div class="requirements">
+        Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+      </div>
+    </div>
+
+    <input type="submit" value="Sign Up" />
+
+  </form>
+
+
+
+</body>
+
+</html>
