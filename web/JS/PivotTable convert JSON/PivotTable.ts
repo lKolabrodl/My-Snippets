@@ -6,7 +6,7 @@ interface IOptions {
 
 
 class PivotDate {
-    private options: IOptions = {xAxis: null, yAxis: null, measures: null};
+    private _options: IOptions = {xAxis: null, yAxis: null, measures: null};
 
     public inputData: any = [];
     public tree: any = {};
@@ -18,7 +18,7 @@ class PivotDate {
     public yAxisKeysMap: any = {};
 
     // ф-ия для манипуляции с ячейкой можно поставить для получения measures
-    private aggregator: any = function (argument) {
+    private _aggregator: any = function (argument) {
         return {
             data: [],
             put: function (record) {
@@ -32,9 +32,9 @@ class PivotDate {
 
     constructor(data: any, opt: IOptions) {
         this.inputData = data || [];
-        this.options.xAxis = opt.xAxis || [];
-        this.options.yAxis = opt.yAxis || [];
-        this.options.measures = opt.measures || [];
+        this._options.xAxis = opt.xAxis || [];
+        this._options.yAxis = opt.yAxis || [];
+        this._options.measures = opt.measures || [];
 
         this._initData()
     }
@@ -60,8 +60,8 @@ class PivotDate {
         const xAxisKey: string[] = [];
         const yAxisKey: string[] = [];
 
-        this.options.xAxis.forEach((xAttr) => xAxisKey.push(data[xAttr] || ''));
-        this.options.yAxis.forEach((yAttr) => yAxisKey.push(data[yAttr] || ''));
+        this._options.xAxis.forEach((xAttr) => xAxisKey.push(data[xAttr] || ''));
+        this._options.yAxis.forEach((yAttr) => yAxisKey.push(data[yAttr] || ''));
 
         // ключ из строки всего x,y
         const xAxisKeyFlat: string = xAxisKey.join(' ');
@@ -71,7 +71,7 @@ class PivotDate {
         if (xAxisKey.length > 0) {
             if (!this.xAxisKeysMap[xAxisKeyFlat]) {
                 // TODO add measures
-                this.xAxisKeysMap[xAxisKeyFlat] = this.aggregator();
+                this.xAxisKeysMap[xAxisKeyFlat] = this._aggregator();
                 this.xAxisKeys.push(xAxisKey);
             }
             this.xAxisKeysMap[xAxisKeyFlat].put(data);
@@ -79,7 +79,7 @@ class PivotDate {
         if (yAxisKey.length > 0) {
             if (!this.yAxisKeysMap[yAxisKeyFlat]) {
                 // TODO add mesures
-                this.yAxisKeysMap[yAxisKeyFlat] = this.aggregator();
+                this.yAxisKeysMap[yAxisKeyFlat] = this._aggregator();
                 this.yAxisKeys.push(yAxisKey);
             }
             this.yAxisKeysMap[yAxisKeyFlat].put(data);
@@ -89,7 +89,7 @@ class PivotDate {
 
             if (!this.tree[xAxisKeyFlat]) this.tree[xAxisKeyFlat] = {};
 
-            if (!this.tree[xAxisKeyFlat][yAxisKeyFlat]) this.tree[xAxisKeyFlat][yAxisKeyFlat] = this.aggregator();
+            if (!this.tree[xAxisKeyFlat][yAxisKeyFlat]) this.tree[xAxisKeyFlat][yAxisKeyFlat] = this._aggregator();
 
             this.tree[xAxisKeyFlat][yAxisKeyFlat].put(data);
 
@@ -106,7 +106,7 @@ class PivotDate {
         this.yAxisKeys = this.yAxisKeys.sort(this._compareArr);
     }
 
-    public _getDataXY(xAxis: any, yAxis: any): any {
+    public getDataXY(xAxis: any, yAxis: any): any {
         const flatXKey: string = xAxis.join(' ');
         const flatYkey: string = yAxis.join(' ');
 
@@ -501,7 +501,7 @@ let hasData = 0;
 
 for (let i = 0; i < a.xAxisKeys.length; i++) {
     for (let j = 0; j < a.yAxisKeys.length; j++) {
-        if (a._getDataXY(a.xAxisKeys[i], a.yAxisKeys[j])) hasData++;
+        if (a.getDataXY(a.xAxisKeys[i], a.yAxisKeys[j])) hasData++;
     }
 }
 
