@@ -4,6 +4,7 @@ fetch("https://rcslabs.ru/locations.json")
         return response.json();
     })
     .then((data) => {
+      console.log(dataTree(data))
         return dataTree(data);
 
     })
